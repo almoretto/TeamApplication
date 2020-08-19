@@ -1,4 +1,4 @@
-﻿namespace SementesApplication
+﻿namespace TeamApplication.Models
 {
     public enum AddressKind : int
     {

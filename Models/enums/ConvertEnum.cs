@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SementesApplication.Models.enums
+namespace TeamApplication.Models
 {
     public struct ConvertEnum
     {

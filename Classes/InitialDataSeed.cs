@@ -1,17 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using SementesApplication.Data;
+using TeamApplication.Data;
+using TeamApplication.Models;
 using System;
 using System.Linq;
 
-namespace SementesApplication
+namespace TeamApplication.Classes
 {
     public static class InitialDataSeed
     {
         public static void Initialize(IServiceProvider serviceProvider)
         {
-            using (var context = new SementesApplicationContext(
-                serviceProvider.GetRequiredService<DbContextOptions<SementesApplicationContext>>()))
+            using (var context = new ApplicationDbContext(
+                serviceProvider.GetRequiredService<DbContextOptions<ApplicationDbContext>>()))
             {
                 // Look for any States.
                 if (context.State.Any())

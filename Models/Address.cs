@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SementesApplication
+namespace TeamApplication.Models
 {
     public class Address
     {
